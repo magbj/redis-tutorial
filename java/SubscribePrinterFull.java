@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 class Subscriber extends JedisPubSub {
     public void onMessage(String channel, String message) {
-    	
+    	System.out.println("Message: "+message);
     }
 
     public void onSubscribe(String channel, int subscribedChannels) {
@@ -27,7 +27,7 @@ class Subscriber extends JedisPubSub {
 
     public void onPMessage(String pattern, String channel,
         String message) {
-    	
+    	System.out.println("Message: "+message);
     }
 }
 
